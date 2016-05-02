@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tierra5.png','imagenes/cambioclimatico2.jpg','imagenes/cuidadospl2.jpg','imagenes/tierra4.png','imagenes/cuidadospl4.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>DIA DE LA TIERRA </h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Dia de la Tierra</h1>
+<div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:auto;height:auto;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<br>
+<br>
+<p>Si quieres saber sobre el tema da clic  <a href="https://www.youtube.com/watch?v=dlh4htYFIj0"> aqui</a></p>
+<br>
+</div>
+<div>
+</div>
+</div>
+</div>
+
+<div> 
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que dia se celebra?</h2>
+<p> Se muestra el día que se celebra</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Por que se celebra el dia de la Tierra?</h2>
+<p>Se muestra  el motivo por el cual se celebra</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados del planeta</h2>
+<p>Muestran los cuidados del planeta</p>
+</a>
+</li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados del medio ambiente</h2>
+<p>Muestran los cuidados del medio ambiente</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cambio climatico</h2>
+<p>Muestra la definicion de el cambio climatico</p>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>MI COMUNIDAD</h1>
+<div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor2/indexwow2.html" style="width:830px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+</div>
+<div>
+</div>
+</div>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion cinco</h4>
+<h4>Consuelo Coyotl Casasola </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>DÍA QUE SE CELEBRA</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El 22 de abril se celebra el Día Mundial de la Tierra</h2>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/tierra5.png',1)"><img src="imagenes/tierra.png" width="340" height="148" id="Image13"></a> </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+<center>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</center>
+</div>
+<h4>Aplicacion cinco, CCC</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>MOTIVO POR EL QUE SE CELEBRA EL DÍA DE LA TIERRA</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<P>El 22 de abril de 1970 hubo una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.</P>
+<p>El impulsor de la protesta fue el senador y activista ambiental Gaylord Nelson, quien convocó a miles de universidades, escuelas primarias y secundarias entre otras comunidades a participar del pedido. Gracias a la expresión social el Ejecutivo estadounidense creó Environmental Protection Agency (Agencia de Protección Ambiental) y varias leyes de protección del medio ambiente.</p>
+<p>La intensión es sensibilizar a la humanidad de que es parte del planeta Tierra y sus huellas marcarán el destino del mundo, por eso reducir (el consumo), reciclar yreutilizar objetos es la forma en que cada uno día a día puede colaborar para evitar la contaminación ambiental.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/cuidadospl2.jpg',1)"><img src="imagenes/cuidadospl.jpg" width="233" height="216" id="Image15"></a> </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+<center>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</center>
+</div>
+<h4>Aplicacion cinco, CCC</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CUIDADOS DEL PLANETA</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>UTILIZA MENOS AGUA</h1>
+<div>
+<OL>
+<li>Ahorra agua siempre que puedas.</li>
+<li>Siempre que puedas, recolecta y reutiliza el agua.</li>
+<li>Mantén cerrado el grifo mientras no necesites el agua que sale para no desperdiciar el agua.</li>
+<li>Riega por la mañana o bien tarde para que el agua no se evapore enseguida.</li>
+</OL>
+</div>
+<div>
+<center>
+<img src="imagenes/cuidadospl3.jpg" width="50%" height="50%"> </center>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>AHORRA ENERGIA ELECTRICA</h1>
+<div>
+<OL>
+<li>Apaga las luces.</li>
+<li>Utiliza bombillas de bajo consumo.</li>
+<li>Evita utilizar electrodomésticos y energía innecesariamente.</li>
+<li>Usa menos el aire acodiciando, los calentadores eléctricos y la calefacción</li>
+<li>Desconecta los aparatos eléctricos y los electrodomésticos.</li>
+<li>Aprovechar la luz natural.</li>
+</OL>
+</div>
+<div>
+<center>
+<img src="imagenes/cuidadospl1.jpg" width="50%" height="50%"> </center></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINA MENOS</h1>
+<div>
+<OL>
+<li>Utiliza menos el coche.</li>
+<li>Siempre que puedas, utiliza el transporte público.</li>
+<li>Ahorra combustible.</li>
+<li>Gasta menos gas.</li>
+</OL>
+</div>
+<div>
+<center>
+<img src="imagenes/cuidadosma1.jpg" width="50%" height="50%"></center> </div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>RECICLA TODO LO QUE PUEDAS</h1>
+<div>
+<OL>
+<li>Cuida y reutiliza las hojas de papel.</li>
+<li>Recicla tu basura y todo lo que puedas.</li>
+<li>Separa la basura.</li>
+<li>Compra productos reciclados.</li>
+<li>Evita usar recipientes de aluminio y de plástico.</li>
+</OL>
+</div>
+<div>
+<center>
+<img src="imagenes/cuidadospl2.jpg" width="50%" height="50%"></center> </div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>GENERA MENOS DESPERDICIOS</h1>
+<div>
+<OL>
+<li>Utiliza pilas recargables.</li>
+<li>Evita usar productos desechables.</li>
+<li>Si tienes que comprar botellas desechables, compra botellas más grandes</li>
+<li>Evitar utilizar bolsas de plástico cuando puedas utilizar otras.</li>
+</OL>
+</div>
+<div>
+<center>
+<img src="imagenes/cuidadospl.jpg" width="50%" height="50%"> </center></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>OTROS CONSEJOS</h1>
+<div>
+<OL>
+<li>Evita comprar y usar aerosoles</li>
+<li>Planta un árbol.</li>
+<li>No tires papeles ni residuos en la calle.</li>
+<li>No tires el aceite que no sirva por las cañerías.</li>
+</OL>
+</div> 
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sustitucion','','imagenes/cuidadospl4.jpg',1)"><img src="imagenes/cuidadospl5.jpg" width="321" height="157" id="sustitucion"></a></div>
+</div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+<center>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</center>
+</div>
+<h4>Aplicacion cinco, CCC</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CUIDADOS DEL MEDIO AMBIENTE</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<ul>
+<li>Comprar preferentemente productos con envases de amplia capacidad y reutilizables. </li>
+<li>Intentar llevar nuestras propias bolsas para la compra.</li>
+<li>Los alimentos de granel son una gran elección. </li>
+<li>Debemos procurar conservar los alimentos en recipientes duraderos, evitando utilizar en exceso el papel de aluminio. </li>
+<li>Evitar comprar productos con envoltorios superfluos.</li>
+<center>
+<img src="imagenes/cuidadosma.jpg" width="50%" height="50%"></center>
+<li>Separar los materiales de la basura: Utilizar bolsas diferentes para basura orgánica, papel y el cartón, envases de vidrio y envases de brik, plástico y latas. </li>
+<li>Tirar cada una de esas bolsas en los contenedores dispuestos a cada uno de ellos. </li>
+<li>No tirar nunca los vasos de cristal y las bombillas con el resto de los vidrios de los embases ya que no pueden reciclarse conjuntamente. </li>
+<li>Estemos atentos de quitar los tapones y los objetos que tengan en su interior las botellas de vidrio. </li>
+<li>Tratar de consumir menos papel, o intentar utilizar más papel reciclable. </li>
+<center>
+<img src="imagenes/cuidadosma2.jpg" width="50%" height="50%"></center>
+<li>Enviar a reciclar la máxima cantidad de papel posible.</li> 
+<li>Evitar utilizar, en la medida de lo posible, artículos desechables, ya que la industria de productos de usar y tirar es la que genera más basura en todo el mundo.</li> 
+<li>Intentar utilizar pilas recargables o pilas verdes no contaminantes en lugar de las comunes. </li>
+</ul>
+<center>
+ <img src="imagenes/cuidadosma3.jpg" width="50%" height="50%">
+</center>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+<center>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</center>
+</div>
+<h4>Aplicacion cinco, CCC</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CAMBIO CLIMATICO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+
+<!--video-->
+
+
+
+<h2>¿QUE ES?</h2>
+<P> El cambio climático es un cambio en la distribución estadística de los patrones meteorológicos durante un periodo prolongado de tiempo (décadas a millones de años). Puede referirse a un cambio en las condiciones promedio del tiempo o en la variación temporal meteorológica de las condiciones promedio a largo plazo (más o menos fenómenos meteorológicos extremos). Está causado por factores como procesos bióticos, variaciones en la radiación solar recibida por la Tierra, tectónica de placas y erupciones volcánicas. También se han identificado ciertas actividades humanas como causas significativas del cambio de clima reciente, a menudo llamado calentamiento global.</P>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/cambioclimatico2.jpg',1)"><img src="imagenes/cambioclimatico.jpg" width="273" height="185" id="Image14"></a> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONSECUENCIAS</h1>
+<div>
+<ul>
+<li>Causas naturales: Incluyen actividad volcánica o cambios en la energía recibida desde el Sol, entre otros.</li>
+<li>Causas antrópicas (generadas por actividades humanas): Incluye la quema de combustibles fósiles, tala de bosques, entre otros.</li>
+</ul>
+<br>
+</div>
+<div>
+<img src="imagenes/cambioclimatico1.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+<center>
+<img src="imagenes/iconotier.png" width="46" height="46">
+</center>
+</div>
+<h4>Aplicacion cinco, CCC</h4>
+</div>
+</div>
+</div>
+</body>
+</html>
